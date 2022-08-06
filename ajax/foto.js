@@ -18,6 +18,7 @@ document.querySelector('button').addEventListener('click', () => {
     var link = document.createElement('a');
     link.download = 'foto.png';
     link.href = canvas.toDataURL();
-    link.textContent = 'Clique para baixar a imagem';
-    document.body.appendChild(link);
+    link.textContent = 'Baixar foto';
+    document.querySelector("#baixar").appendChild(link);
+   
 });

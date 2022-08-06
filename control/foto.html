@@ -24,22 +24,37 @@ margin-left: 180px;
 margin-top: -65px;
 }
     video {
-width: 220px;
-box-shadow: 0 5px 10px rgb(0 0 0 / 60%);
-border-radius: 10px;
-margin-top: 76px;
-background: white;
+display: none;
+margin-top: 150px;
     }
     canvas {
-width: 220px;
 box-shadow: 0 5px 10px rgb(0 0 0 / 60%);
 border-radius: 10px;
-margin-top: 20px;
 background: white;
-display: block;
+margin-top: 15%;
+margin-bottom: 10%;
     }
-    .card button {
-margin-top: 15px;
+    #baixar {
+margin-top: 10%;
+    }
+    div a {
+border-radius: 50px;
+border: 2px solid #fff;
+color: #fff;
+background: none;
+outline: none;
+margin: 0 2px;
+cursor: pointer;
+height: 40px;
+width: 175px;
+font-size: 15px;
+padding: 10px;
+    }
+    div .voltar {
+display: flex;
+width: 70px;
+margin-left: 58%;
+margin-top: 9px;
     }
     </style>
 
@@ -49,13 +64,15 @@ margin-top: 15px;
         <div class="card">
             <img src="../img/jr-sem-jeito.png" alt="Jimmys Rafael">
             <span class="post">Sorria pra foto!</span>
-            <div class="">
-                <video autoplay style="width: 50px;"></video>
+            <a href="../index.html" class="voltar">Voltar</a>
+            <div>
+                <video autoplay></video>
             </div>
             <div>
-                <canvas style="width: 100px;"></canvas>
+                <canvas style="width: 220px;"></canvas>
             </div>
             <button>Tirar foto</button>
+            <div id="baixar"></div>
         </div>
     </div>
     <script src="../ajax/foto.js"></script>
