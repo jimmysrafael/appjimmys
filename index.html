@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#383736">
+
+    <title>Jimmys Rafael</title>
+    <link href="img/jr-boca-aberta.png" rel="icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="img/jr-boca-aberta.png">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="img/jr-acenando.png" alt="Jimmys Rafael">
+            <h3>Jimmys Rafael</h3>
+            <span class="post">Olá, tudo bem?</span>
+            <div class="icons">
+                <a href="" class="fa fa-music"> <i></i> </a>
+                <a href="" class="fa fa-camera"></a>
+                <a href="" class="fa fa-birthday-cake"></a>
+            </div>
+            <a href="" class="jimcol"><button>Deixe o Jimmys feliz</button></a>
+            <a href="control/foto.html" class="jimcol"><button>Me envia uma foto</button></a>
+            <a href="" class="jimcol"><button>Ta triste?</button></a>
+            <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5592994067642&text=Ooi%20,%20to%20com%20saudades%20do%20Jimmys%20:(" class="jimcol"><button>Fala comigo</button></a>
+            <div class="shares">
+                <a href="#" class="counter"> <i class="fa fa-file-code"></i> <span class="count">200</span></a>
+                <a href="#" class="counter"> <i class="fa fa-folder-open"></i> <span class="count">500</span></a>
+                <a href="#" class="counter"> <i class="fa fa-laptop-code"></i> <span class="count">400</span></a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.count').each(function(){
+                $(this).prop('counter', 0).animate({
+                    Counter : $(this).text()
+                }, {
+                    duration : 3500, 
+                    easing : 'swing',
+                    step : function (now) {
+                        $(this).text(Math.ceil(now) + '+');
+                    }
+                })
+            })
+        });
+    </script>
+</body>
+</html>
