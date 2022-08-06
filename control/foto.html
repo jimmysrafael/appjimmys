@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#383736">
+
+    <title>Jimmys Rafael</title>
+    <link href="../img/logo-jimmys.png" rel="icon">
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="../img/logo-jimmys.png">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+    .card img {
+margin-left: -173px;
+margin-top: 20px;
+}
+    span {
+display: flex;
+margin-left: 180px;
+margin-top: -65px;
+}
+    video {
+width: 220px;
+box-shadow: 0 5px 10px rgb(0 0 0 / 60%);
+border-radius: 10px;
+margin-top: 76px;
+background: white;
+    }
+    canvas {
+width: 220px;
+box-shadow: 0 5px 10px rgb(0 0 0 / 60%);
+border-radius: 10px;
+margin-top: 20px;
+background: white;
+    }
+    .card button {
+margin-top: 15px;
+    }
+    </style>
+
 </head>
 <body>
-    <video id="video" autoplay></video>
+    <div class="container">
+        <div class="card">
+            <img src="../img/jr-sem-jeito.png" alt="Jimmys Rafael">
+            <span class="post">Sorria pra foto!</span>
+            <div class="">
+                <video autoplay style="width: 220px;"></video>
+            </div>
+            <div>
+                <canvas style="width: 220px;"></canvas>
+            </div>
+            <button>Tirar foto</button>
+        </div>
+    </div>
     <script src="../ajax/foto.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
