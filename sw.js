@@ -21,7 +21,32 @@ self.addEventListener('install', function(event){
                 '/webfonts/fa-brands-400.woff2',
                 '/webfonts/fa-brands-400.ttf',
                 '/control/foto.html',
-                '/ajax/foto.js'
+                '/ajax/foto.js',
+                '/ajax/audio.js',
+                '/ajax/game.js',
+                '/ajax/login.js',
+                '/ajax/pag.js',
+                '/control/foguete.html',
+                '/control/foto.html',
+                '/control/game.html',
+                '/control/gamelogin.html',
+                '/control/pag.html',
+                '/css/foguete.css',
+                '/css/game.css',
+                '/css/login.css',
+                '/css/reset.css',
+                '/img/fundopreto.jpg',
+                '/img/J.png',
+                '/img/jr-aniversario.png',
+                '/img/jr-assustado.png',
+                '/img/jr-blz.png',
+                '/img/jr-lampada.png',
+                '/img/jr-raiva.png',
+                '/img/jr-rindo.png',
+                '/img/jr-sem-jeito.png',
+                '/img/jr-v.png',
+                '/img/rocket.png',
+                './music.mp3'
 
             ])
         })
