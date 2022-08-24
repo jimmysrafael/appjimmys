@@ -46,7 +46,8 @@ self.addEventListener('install', function(event){
                 '/img/jr-sem-jeito.png',
                 '/img/jr-v.png',
                 '/img/rocket.png',
-                './music.mp3'
+                './music.mp3',
+                './calculadora.html'
 
             ])
         })
