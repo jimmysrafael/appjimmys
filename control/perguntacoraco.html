@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#383736">
+
+    <title>Jimmys Rafael</title>
+    <link href="../img/logo-jimmys.png" rel="icon">
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="../img/logo-jimmys.png">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+    .card img {
+margin-top: 99px;
+}
+    span {
+display: flex;
+margin-left: 55px;
+margin-top: 120px;
+margin-bottom: 30px;
+}
+    div a {
+border-radius: 50px;
+border: 2px solid #fff;
+color: #fff;
+background: none;
+outline: none;
+margin: 0 2px;
+cursor: pointer;
+height: 40px;
+width: 175px;
+font-size: 15px;
+padding: 10px;
+    }
+    div .voltar {
+display: flex;
+width: 70px;
+margin-left: 58%;
+margin-top: 9px;
+    }
+#jimmove {
+       left : 25px;
+      }
+#jimchange:hover {
+       cursor:pointer;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="../img/jr-nervoso.PNG" alt="Jimmys Rafael">
+            <span class="post">Você aceita ser minha mulher?</span>
+            <button style="position: absolute; width:140px" id="jimchange"> Sim </button>
+            <button style="position: absolute; width:140px" id="jimmove"> Não </button>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+<script>
+  $("#jimchange").click(function() {
+  window.location.href = 'coracao.html';
+  });
+  
+  $("#jimmove").hover(function() {
+    change();
+  });
+  
+  function change() {
+    var i = Math.floor(Math.random()*200)+1;
+    var j = Math.floor(Math.random()*100)+1;
+    $("#jimmove").css({top: j+'px',left:  i+'px'});
+  }
+</script>
+</html>
