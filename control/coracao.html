@@ -62,7 +62,9 @@
 
       <div class="box" data-aos="fade-up" data-aos-delay="150">
          <div class="content">
-            <audio src="../ghost.mp3" autoplay controls></audio>
+            <audio id="autoplay" controls loop>
+               <source src="../ghost.mp3" type="audio/mp3">
+            </audio>
          </div>
       </div>
 
@@ -307,7 +309,11 @@
 
 <!-- custom js file link     -->
 <script src="../ajax/corcao.js"></script>
-
+<script>
+   window.onload = function() {
+document.getElementById("autoplay").play();
+}
+</script>
 <script>
 
    AOS.init({
