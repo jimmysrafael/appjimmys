@@ -8,13 +8,13 @@
     <title>Jimmys Rafael</title>
     <link href="../img/logo-jimmys.png" rel="icon">
 
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="../manifest.webmanifest">
     <link rel="apple-touch-icon" href="../img/logo-jimmys.png">
     <link rel="canonical" href="">
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Style part 02  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
    <link rel="stylesheet" href="../css/aos.css">
    <link rel="stylesheet" href="../css/coracao.css">
    <!-- Style part 02  -->
@@ -55,6 +55,11 @@ margin-top: 9px;
       }
 #jimchange:hover {
        cursor:pointer;
+      }
+      @media(min-width:980px){
+         #part-02{
+         display: none;
+      }
       }
     </style>
 
@@ -346,8 +351,6 @@ margin-top: 9px;
         
         <!-- services section ends -->
         </div>
-    
-<script src="index.js"></script>
 <!-- JS part 02 -->
 <script src="../ajax/aos.js"></script>
 <script src="../ajax/corcao.js"></script>
@@ -358,26 +361,28 @@ margin-top: 9px;
     });
  
  </script>
+ <script>
+    $("#jimchange").click(function() {
+    let par01 = document.getElementById("part-01");
+    par01.style.display="none";
+    let par02 = document.getElementById("part-02");
+    par02.style.display="";
+    par02.style.background="#000";
+    var x = document.getElementById("autoplay"); 
+    x.play();
+    });
+    
+    $("#jimmove").hover(function() {
+      change();
+    });
+    
+    function change() {
+      var i = Math.floor(Math.random()*200)+1;
+      var j = Math.floor(Math.random()*100)+1;
+      $("#jimmove").css({top: j+'px',left:  i+'px'});
+    }
+  </script>
+  <script src="../index.js"></script>
 </body>
-<script>
-  $("#jimchange").click(function() {
-  let par01 = document.getElementById("part-01");
-  par01.style.display="none";
-  let par02 = document.getElementById("part-02");
-  par02.style.display="";
-  var x = document.getElementById("autoplay"); 
-  x.play();
-  });
-  
-  $("#jimmove").hover(function() {
-    change();
-  });
-  
-  function change() {
-    var i = Math.floor(Math.random()*200)+1;
-    var j = Math.floor(Math.random()*100)+1;
-    $("#jimmove").css({top: j+'px',left:  i+'px'});
-  }
-</script>
 
 </html>
